@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
 
-
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
@@ -22,14 +21,14 @@ function Header() {
             <div className="inner w-full flex justify-between items-center py-4 px-4">
                 <Image
                     className="z-[100000]"
-                    src="/icons/logo.jpg"
+                    src="/isabell_ramsvik-small_logo-gold.jpg"
                     alt="Logo"
-                    width={60}
-                    height={60}
+                    width={100}
+                    height={100}
                 />
 
                 {/* Desktop Nav */}
-                <nav className="hidden md:flex items-center text-white gap-8 text-lg font-medium">
+                <nav className="hidden md:flex items-center text-white gap-8">
                     {navLinks.map(({ href, label, isButton }) => (
                         <Link href={href} key={label}>
                             <span
@@ -53,16 +52,16 @@ function Header() {
                     <div className="h-1 w-full bg-primary-light rounded" />
                     <div className="h-1 w-full bg-primary-light rounded" />
                     <div
-                        className={`h-1 bg-primary-light rounded transition-all duration-300 ${isOpen ? 'w-[75%] ml-0' : 'w-[75%] ml-auto'}`}
+                        className={`h-1 bg-primary-light rounded transition-all duration-300 ${
+                            isOpen ? "w-[75%] ml-0" : "w-[75%] ml-auto"
+                        }`}
                     />
                 </div>
             </div>
 
             {/* Mobile Nav */}
             {isOpen && (
-                <nav
-                    className="fixed top-[90px] left-0 right-0 bg-black shadow-lg pb-16 pt-8 flex flex-col items-center gap-16 text-white text-lg font-medium md:hidden z-40 transition-all duration-300 transform animate-slide-down"
-                >
+                <nav className="fixed top-[90px] left-0 right-0 bg-black shadow-lg pb-16 pt-8 flex flex-col items-center gap-16 text-white text-lg font-medium md:hidden z-40 transition-all duration-300 transform animate-slide-down">
                     {navLinks.map(({ href, label, isButton }) => (
                         <Link
                             href={href}
@@ -71,9 +70,7 @@ function Header() {
                         >
                             <span
                                 className={`hover:text-primary-light text-xl transition-all ${
-                                    isButton
-                                        ? "btn-golden inline-block"
-                                        : ""
+                                    isButton ? "btn-golden inline-block" : ""
                                 }`}
                             >
                                 {label}
@@ -82,7 +79,6 @@ function Header() {
                     ))}
                 </nav>
             )}
-
         </header>
     );
 }

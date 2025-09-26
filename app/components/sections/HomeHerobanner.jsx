@@ -6,19 +6,21 @@ import React from "react";
 const HomeHerobanner = () => {
     return (
         <div className="bg-black">
-            <div className="inner flex justify-center items-center py-32">
-                <div className="right-4 block absolute lg:hidden">
+            <div className="inner flex justify-center items-center py-16">
+                <div className="flex-1 flex flex-col gap-8 z-10 bg-black text-center items-center py-4 max-w-fit">
+                    <h1 className="text-6xl font-light sr-only">
+                        Isabell Ramsvik
+                    </h1>
                     <Image
-                        src="/heropicture.png"
+                        src="/isabell_ramsvik-full_logo.png"
                         alt="Hero banner"
-                        width={400}
+                        width={320}
                         height={400}
+                        className="max-w-full"
                         objectFit="contain"
                     />
-                </div>
-                <div className="flex-1 flex flex-col gap-8 z-10 bg-black-transparent py-4 max-w-fit mr-auto">
-                    <h1 className="text-6xl font-light">Ramsvik Kunst</h1>
-                    <p className="max-w-[554px]">
+                    <div className="w-3/4 border-b-2 border-primary-light pt-8"></div>
+                    <p className="max-w-xl font-light">
                         Hei jeg er Isabell Ramsvik, velkommen til nettsiden min!
                         Jeg lager kunst og ønsker deg velkommen til å se gjennom
                         mine prosjekter. Klikk på knappen under for å se mine
@@ -29,15 +31,6 @@ const HomeHerobanner = () => {
                             SE GALLERI
                         </span>
                     </Link>
-                </div>
-                <div className="pl-8 hidden lg:block">
-                    <Image
-                        src="/heropicture.png"
-                        alt="Hero banner"
-                        width={500}
-                        height={500}
-                        objectFit="contain"
-                    />
                 </div>
             </div>
         </div>

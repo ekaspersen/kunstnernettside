@@ -1,6 +1,6 @@
 // appapp/components/sections/Skreddersyddmaleriform.jsx
 "use client";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { SpinningLoader } from "../SpinningLoader";
 
@@ -15,51 +15,68 @@ export default function SkreddersyddMaleriForm() {
     const [success, setSuccess] = useState(null);
     const [loading, setLoading] = useState(false);
 
+    useEffect(() => {
+        // Initialize EmailJS with your public key (runs in browser)
+        if (process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY) {
+            emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
+        } else {
+            console.warn(
+                "EmailJS public key not set (NEXT_PUBLIC_EMAILJS_PUBLIC_KEY)"
+            );
+        }
+    }, []);
+
     const validate = () => {
         const newErrors = {};
         if (!form.fullname.trim()) newErrors.fullname = "Navn er påkrevd.";
-        if (!form.email.trim()) {
-            newErrors.email = "Epost er påkrevd.";
-        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
+        if (!form.email.trim()) newErrors.email = "Epost er påkrevd.";
+        else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
             newErrors.email = "Ugyldig epostadresse.";
-        }
         if (!form.wish.trim())
             newErrors.wish = "Vennligst skriv inn ønsket motiv.";
         return newErrors;
     };
 
     const handleChange = (e) => {
-        setForm({ ...form, [e.target.id]: e.target.value });
+        setForm((s) => ({ ...s, [e.target.id]: e.target.value }));
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setSuccess(null);
         const validationErrors = validate();
-        if (Object.keys(validationErrors).length > 0) {
+        if (Object.keys(validationErrors).length) {
             setErrors(validationErrors);
             return;
         }
-
+        setErrors({});
         setLoading(true);
+
         try {
-            await emailjs.send(
-                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-                {
-                    from_name: form.fullname,
-                    email: form.email,
-                    phone: form.phone || "Not provided",
-                    wish: form.wish,
-                },
-                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+            const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+            const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+
+            const templateParams = {
+                from_name: form.fullname, // make sure your EmailJS template uses {{from_name}}
+                email: form.email, // {{email}}
+                phone: form.phone || "Not provided", // {{phone}}
+                wish: form.wish, // {{wish}}
+            };
+
+            const resp = await emailjs.send(
+                serviceId,
+                templateId,
+                templateParams
             );
+            console.log("EmailJS success:", resp); // helpful for debugging
             setSuccess("Takk for meldingen! Jeg kontakter deg snart.");
             setForm({ fullname: "", phone: "", email: "", wish: "" });
-            setErrors({});
-        } catch (error) {
-            console.error("Failed to send email:", error);
+        } catch (err) {
+            console.error("EmailJS send failed:", err);
             setSuccess(null);
-            alert("Noe gikk galt. Prøv igjen senere.");
+            setErrors({
+                submit: "Noe gikk galt ved sending. Prøv igjen senere.",
+            });
         } finally {
             setLoading(false);
         }
@@ -93,11 +110,11 @@ export default function SkreddersyddMaleriForm() {
                     onSubmit={handleSubmit}
                     className="max-w-sm w-full mx-auto flex flex-col text-left gap-8"
                 >
-                    {/* Fullt navn */}
+                    {/* Name */}
                     <span>
                         <label
-                            className="block font-light italic text-primary mb-1"
                             htmlFor="fullname"
+                            className="block font-light italic text-primary mb-1"
                         >
                             Ditt fulle navn*
                         </label>
@@ -115,11 +132,11 @@ export default function SkreddersyddMaleriForm() {
                         )}
                     </span>
 
-                    {/* Telefon */}
+                    {/* Phone */}
                     <span>
                         <label
-                            className="block font-light italic text-primary mb-1"
                             htmlFor="phone"
+                            className="block font-light italic text-primary mb-1"
                         >
                             Telefon
                         </label>
@@ -132,11 +149,11 @@ export default function SkreddersyddMaleriForm() {
                         />
                     </span>
 
-                    {/* Epost */}
+                    {/* Email */}
                     <span>
                         <label
-                            className="block font-light italic text-primary mb-1"
                             htmlFor="email"
+                            className="block font-light italic text-primary mb-1"
                         >
                             Epost*
                         </label>
@@ -154,11 +171,11 @@ export default function SkreddersyddMaleriForm() {
                         )}
                     </span>
 
-                    {/* Ønske */}
+                    {/* Wish */}
                     <span>
                         <label
-                            className="block font-light italic text-primary mb-1"
                             htmlFor="wish"
+                            className="block font-light italic text-primary mb-1"
                         >
                             Ditt ønske*
                         </label>
@@ -180,8 +197,10 @@ export default function SkreddersyddMaleriForm() {
                         <button
                             type="submit"
                             className="btn-golden inline-block"
+                            disabled={loading}
+                            aria-busy={loading}
                         >
-                            Send inn ønske
+                            {loading ? "Sender..." : "Send inn ønske"}
                         </button>
                         <span className="mt-1 italic font-light text-xs text-primary-light">
                             Trykk her for å sende inn skjema
@@ -189,6 +208,11 @@ export default function SkreddersyddMaleriForm() {
                         {success && (
                             <p className="text-green-500 text-sm text-center mt-2">
                                 {success}
+                            </p>
+                        )}
+                        {errors.submit && (
+                            <p className="text-red-500 text-sm text-center mt-2">
+                                {errors.submit}
                             </p>
                         )}
                     </span>
