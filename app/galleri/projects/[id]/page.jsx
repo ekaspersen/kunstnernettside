@@ -20,8 +20,6 @@ export default function ProjectPage() {
     const [galleryImgLoaded, setGalleryImgLoaded] = useState({});
     const [selectedImgLoaded, setSelectedImgLoaded] = useState(false);
 
-
-
     useEffect(() => {
         try {
             const foundProject = projectsData.projects.find(
@@ -113,44 +111,22 @@ export default function ProjectPage() {
                     </div>
                 </div>
 
-                <div
-                    className="flex flex-col gap-4 mt-[-64px] transition-all duration-700 opacity-100 translate-y-0"
-                >
+                <div className="flex flex-col gap-4 mt-[-64px] transition-all duration-700 opacity-100 translate-y-0">
                     <h2 className="text-2xl sm:text-3xl font-extralight">
                         Bilder i prosjektet
                     </h2>
-                    <div className="grid grid-cols-4 md:grid-cols-6 gap-4 fade-up">
-                        {(project.images || []).map((image, index) => {
-                            return (
-                                <div
-                                    key={image.id}
-                                    className="cursor-pointer transition-transform duration-500 scale-100 opacity-100 fade-up"
-                                    onClick={() => handleImageClick(image)}
-                                >
-                                    <div className="relative w-full h-32 flex items-center justify-center">
-                                        <Image
-                                            src={image.url}
-                                            alt={image.title || "Prosjektbilde"}
-                                            width={200}
-                                            height={200}
-                                            className="w-full h-32 object-cover rounded border-2 border-primary-light hover:border-white image-fade-in"
-                                        />
-                                    </div>
-                                </div>
-                            );
-                        })}
-                    </div>
-
                     <div className="mt-8 fade-up">
                         {selectedImage ? (
                             <div
                                 key={selectedImage.id}
-                                className="flex flex-col gap-4 items-center text-center fade-up"
+                                className="flex flex-col gap-4 items-center text-center fade-up min-h-[480px]"
                             >
                                 <div className="relative w-full max-h-[480px] flex items-center justify-center">
                                     <Image
                                         src={selectedImage.url}
-                                        alt={selectedImage.title || "Valgt bilde"}
+                                        alt={
+                                            selectedImage.title || "Valgt bilde"
+                                        }
                                         width={800}
                                         height={400}
                                         className="w-full max-h-[320px] object-contain max-w-fit rounded-lg border-4 border-primary-light image-fade-in"
@@ -159,6 +135,9 @@ export default function ProjectPage() {
                                 <h3 className="text-2xl font-light mb-[-8px]">
                                     {selectedImage.title}
                                 </h3>
+                                <p className="text-sm max-w-2xl font-semibold text-primary-light">
+                                    {selectedImage.descriptionInfo}
+                                </p>
                                 <p className="text-sm max-w-2xl font-light">
                                     {selectedImage.description}
                                 </p>
@@ -172,20 +151,37 @@ export default function ProjectPage() {
                             </p>
                         )}
                     </div>
+                    <div className="grid grid-cols-6 md:grid-cols-8 gap-4 fade-up mt-8">
+                        {(project.images || []).map((image, index) => {
+                            return (
+                                <div
+                                    key={image.id}
+                                    className="cursor-pointer transition-transform duration-500 scale-100 opacity-100 fade-up"
+                                    onClick={() => handleImageClick(image)}
+                                >
+                                    <div className="relative w-full h-24 flex items-center justify-center">
+                                        <Image
+                                            src={image.url}
+                                            alt={image.title || "Prosjektbilde"}
+                                            width={200}
+                                            height={200}
+                                            className="w-full h-32 object-cover rounded border-2 border-primary-light hover:border-white image-fade-in"
+                                        />
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
 
-                <div
-                    className="flex flex-col gap-6 fade-up"
-                >
+                <div className="flex flex-col gap-6 fade-up">
                     <h2 className="text-2xl sm:text-3xl font-extralight">
                         Sjekk ut andre prosjekter
                     </h2>
                     <ProjectScroller />
                 </div>
 
-                <div
-                    className="pb-8 mt-[-64px] fade-up"
-                >
+                <div className="pb-8 mt-[-64px] fade-up">
                     <Link
                         href="/galleri"
                         className="flex items-center text-primary-light hover:text-white bg-black"

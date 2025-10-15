@@ -81,9 +81,7 @@ export default function ImagePage() {
 
     return (
         <div className="bg-black flex flex-col min-h-screen pb-16 overflow-y-hidden">
-            <div
-                className="pb-8 inner fade-up"
-            >
+            <div className="pb-8 inner fade-up">
                 <Link
                     href="/galleri"
                     className="flex items-center text-primary-light hover:text-white bg-black"
@@ -112,12 +110,16 @@ export default function ImagePage() {
                                 e.target.src = "/images/fallback.jpg";
                             }}
                         />
-                        <div
-                            className="flex flex-col gap-4 md:gap-8 fade-up"
-                        >
+                        <div className="flex flex-col gap-4 md:gap-8 fade-up">
                             <h1 className="text-4xl lg:text-6xl font-extralight text-pretty fade-up">
                                 {image.title || "Uten tittel"}
                             </h1>
+                            {image.descriptionInfo &&
+                                image.descriptionInfo.trim() !== "" && (
+                                    <p className="text-sm sm:text-base max-w-2xl text-pretty font-bold text-primary-light fade-up">
+                                        {image.descriptionInfo}
+                                    </p>
+                                )}
                             <p className="text-sm sm:text-base max-w-2xl text-pretty font-light fade-up">
                                 {image.description ||
                                     "Ingen beskrivelse tilgjengelig."}
@@ -126,9 +128,7 @@ export default function ImagePage() {
                     </div>
                 </div>
 
-                <div
-                    className="flex justify-between items-center mt-[-64px] transition-all duration-500 opacity-100 translate-y-0"
-                >
+                <div className="flex justify-between items-center mt-[-64px] transition-all duration-500 opacity-100 translate-y-0">
                     {prevImage ? (
                         <Link
                             href={`/galleri/images/${prevImage.id}`}
@@ -159,8 +159,7 @@ export default function ImagePage() {
                         </h2>
                         <div className="flex flex-col items-center max-w-fit lg:flex-row gap-8 fade-up">
                             {project.images && project.images.length > 0 && (
-                                <div
-                                >
+                                <div>
                                     <Image
                                         src={project.images[0].url}
                                         alt={project.title}
@@ -177,9 +176,7 @@ export default function ImagePage() {
                                     />
                                 </div>
                             )}
-                            <div
-                                className="flex flex-col gap-6 justify-center items-center lg:items-start text-center lg:text-left fade-up"
-                            >
+                            <div className="flex flex-col gap-6 justify-center items-center lg:items-start text-center lg:text-left fade-up">
                                 <h3 className="text-3xl font-extralight mb-[-12px]">
                                     {project.title}
                                 </h3>

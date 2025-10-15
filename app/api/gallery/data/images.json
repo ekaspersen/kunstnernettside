@@ -4,7 +4,7 @@
             "id": 1,
             "url": "/images/Det_abstrakte/minindrebilledverden.jpg",
             "title": "Mitt indre",
-            "description": "Akryl på canvas, 2025. Et abstrakt selvportrett gjennom fargespråk.",
+            "descriptionInfo": "Akryl på canvas, 2025. Et abstrakt selvportrett gjennom fargespråk.",
             "projectId": 1,
             "displayInGallery": false
         },
@@ -12,7 +12,7 @@
             "id": 2,
             "url": "/images/Det_abstrakte/Abstraktknust.JPG",
             "title": "Selvbilde",
-            "description": "Akryl på 300g papir, 30x40 cm, 2025.",
+            "descriptionInfo": "Akryl på 300g papir, 30x40 cm, 2025.",
             "projectId": 1,
             "displayInGallery": true
         },
@@ -20,7 +20,8 @@
             "id": 3,
             "url": "/images/Naturlandskap/isbre.jpg",
             "title": "Isbre",
-            "description": "Et av mine første oljemaleri, inspirert av Norges nest største isbre:  Svartisen, som strekker seg gjennom 3 kommuner i Nord-Norge, i privat eie. 50x60 cm, Olje på canvas, 2020.",
+            "description": "Et av mine første oljemaleri, inspirert av Norges nest største isbre:  Svartisen, som strekker seg gjennom 3 kommuner i Nord-Norge.",
+            "descriptionInfo": "50x60 cm, Olje på canvas, 2020, i privat eie",
             "projectId": 2,
             "displayInGallery": false
         },
@@ -28,7 +29,8 @@
             "id": 4,
             "url": "/images/Naturlandskap/isbre_closeup.jpg",
             "title": "Isbre",
-            "description": "Et av mine første oljemaleri, inspirert av Norges nest største isbre:  Svartisen, som strekker seg gjennom 3 kommuner i Nord-Norge, i privat eie. 50x60 cm, Olje på canvas, 2020.",
+            "description": "Et av mine første oljemaleri, inspirert av Norges nest største isbre:  Svartisen, som strekker seg gjennom 3 kommuner i Nord-Norge.",
+            "descriptionInfo": "50x60 cm, Olje på canvas, 2020, i privat eie.",
             "projectId": 2,
             "displayInGallery": true
         },
@@ -36,7 +38,8 @@
             "id": 5,
             "url": "/images/Naturlandskap/hostlandskap.jpg",
             "title": "Høstlandskap",
-            "description": "Akryl og olje på 300 g papir, 2024, i privat eie. <br> Fargetonene til høsten har alltid fascinert meg, med hundrevis av fargetoner i gul og oransj I dette maleriet forsøkte jeg å holde igjen detaljene, å holde fokuset på følelsen høsten gir.",
+            "description": "Fargetonene til høsten har alltid fascinert meg, med hundrevis av fargetoner i gul og oransj I dette maleriet forsøkte jeg å holde igjen detaljene, å holde fokuset på følelsen høsten gir.",
+            "descriptionInfo": "Akryl og olje på 300 g papir, 2024, i privat eie. ",
             "projectId": 2,
             "displayInGallery": true
         },
@@ -44,7 +47,8 @@
             "id": 6,
             "url": "/images/Naturlandskap/Hostlandskap_vegg.jpg",
             "title": "Høstlandskap",
-            "description": "Fargetonene til høsten har alltid fascinert meg, med hundrevis av fargetoner i gul og oransj I dette maleriet forsøkte jeg å holde igjen detaljene, å holde fokuset på følelsen høsten gir. Akryl og olje på 300 g papir, 2024, i privat eie.",
+            "description": "Fargetonene til høsten har alltid fascinert meg, med hundrevis av fargetoner i gul og oransj I dette maleriet forsøkte jeg å holde igjen detaljene, å holde fokuset på følelsen høsten gir.",
+            "descriptionInfo": "Akryl og olje på 300 g papir, 2024, i privat eie.",
             "projectId": 2,
             "displayInGallery": false
         },
@@ -52,7 +56,8 @@
             "id": 7,
             "url": "/images/Naturlandskap/Fjell_1.jpg",
             "title": "Over vann og fjell",
-            "description": "Inspirert av den Nord-Norske naturen, med de dype blå og grønn tonene: skapte jeg dette maleriet i 2019, som ble mitt første salgsbilde. Olje på canvas  30x40, 2019",
+            "description": "Inspirert av den Nord-Norske naturen, med de dype blå og grønn tonene: skapte jeg dette maleriet i 2019, som ble mitt første salgsbilde. ",
+            "descriptionInfo": "Olje på canvas  30x40, 2019",
             "projectId": 2,
             "displayInGallery": true
         },
@@ -60,7 +65,8 @@
             "id": 8,
             "url": "/images/Naturlandskap/Fjell_2.jpg",
             "title": "Over vann og fjell",
-            "description": "Inspirert av den Nord-Norske naturen, med de dype blå og grønn tonene: skapte jeg dette maleriet i 2019, som ble mitt første salgsbilde. Olje på canvas  30x40, 2019",
+            "description": "Inspirert av den Nord-Norske naturen, med de dype blå og grønn tonene: skapte jeg dette maleriet i 2019, som ble mitt første salgsbilde.",
+            "descriptionInfo": "Olje på canvas  30x40, 2019",
             "projectId": 2,
             "displayInGallery": true
         },
@@ -68,7 +74,8 @@
             "id": 9,
             "url": "/images/Naturlandskap/Fjell_3.jpg",
             "title": "Over vann og fjell",
-            "description": "Inspirert av den Nord-Norske naturen, med de dype blå og grønn tonene: skapte jeg dette maleriet i 2019, som ble mitt første salgsbilde. Olje på canvas  30x40, 2019",
+            "description": "Inspirert av den Nord-Norske naturen, med de dype blå og grønn tonene: skapte jeg dette maleriet i 2019, som ble mitt første salgsbilde.",
+            "descriptionInfo": "Olje på canvas  30x40, 2019",
             "projectId": 2,
             "displayInGallery": true
         },
@@ -76,7 +83,8 @@
             "id": 10,
             "url": "/images/Naturlandskap/Fjell_4.jpg",
             "title": "Over vann og fjell",
-            "description": "Inspirert av den Nord-Norske naturen, med de dype blå og grønn tonene: skapte jeg dette maleriet i 2019, som ble mitt første salgsbilde. Olje på canvas  30x40, 2019",
+            "description": "Inspirert av den Nord-Norske naturen, med de dype blå og grønn tonene: skapte jeg dette maleriet i 2019, som ble mitt første salgsbilde.",
+            "descriptionInfo": "Olje på canvas  30x40, 2019",
             "projectId": 2,
             "displayInGallery": true
         },
@@ -84,7 +92,8 @@
             "id": 11,
             "url": "/images/Morgengry/Morgengry_forside.jpeg",
             "title": "Morgengry",
-            "description": "Morgengry er skapt med tanke om å få frem følelsen av når en ny dag gryr: den første solstrålen som treffer en ny dag som aldri har vært før. Inspirasjonen mitt til dette prosjektet var den unike følelsen av håpet som er i en ny dag, sammen med sangen “Snart gryr en dag” av Trygve Hoff.  Maleriet ble stilt ut ved Galleri Minneparken (Oslo) juni 2024. Dette er en original uten kopier eller prints, og selges for 10 000,- kr. Olje på linlerret, 80x80 cm på gullramme, 2024, til salgs.",
+            "description": "Morgengry er skapt med tanke om å få frem følelsen av når en ny dag gryr: den første solstrålen som treffer en ny dag som aldri har vært før. Inspirasjonen mitt til dette prosjektet var den unike følelsen av håpet som er i en ny dag, sammen med sangen “Snart gryr en dag” av Trygve Hoff.  Maleriet ble stilt ut ved Galleri Minneparken (Oslo) juni 2024.",
+            "descriptionInfo": "Dette er en original uten kopier eller prints, og selges for 10 000,- kr. Olje på linlerret, 80x80 cm på gullramme, 2024, til salgs.",
             "projectId": 3,
             "displayInGallery": true
         },
@@ -92,7 +101,8 @@
             "id": 12,
             "url": "/images/Morgengry/Morgengry_prosess.jpeg",
             "title": "Morgengry",
-            "description": "Morgengry er skapt med tanke om å få frem følelsen av når en ny dag gryr: den første solstrålen som treffer en ny dag som aldri har vært før. Inspirasjonen mitt til dette prosjektet var den unike følelsen av håpet som er i en ny dag, sammen med sangen “Snart gryr en dag” av Trygve Hoff.  Maleriet ble stilt ut ved Galleri Minneparken (Oslo) juni 2024. Dette er en original uten kopier eller prints, og selges for 10 000,- kr. Olje på linlerret, 80x80 cm på gullramme, 2024, til salgs.",
+            "description": "Morgengry er skapt med tanke om å få frem følelsen av når en ny dag gryr: den første solstrålen som treffer en ny dag som aldri har vært før. Inspirasjonen mitt til dette prosjektet var den unike følelsen av håpet som er i en ny dag, sammen med sangen “Snart gryr en dag” av Trygve Hoff.  Maleriet ble stilt ut ved Galleri Minneparken (Oslo) juni 2024.",
+            "descriptionInfo": "Dette er en original uten kopier eller prints, og selges for 10 000,- kr. Olje på linlerret, 80x80 cm på gullramme, 2024, til salgs.",
             "projectId": 3,
             "displayInGallery": false
         },
@@ -100,7 +110,8 @@
             "id": 13,
             "url": "/images/Morgengry/Morgengry_utstilling.jpeg",
             "title": "Morgengry",
-            "description": "Morgengry er skapt med tanke om å få frem følelsen av når en ny dag gryr: den første solstrålen som treffer en ny dag som aldri har vært før. Inspirasjonen mitt til dette prosjektet var den unike følelsen av håpet som er i en ny dag, sammen med sangen “Snart gryr en dag” av Trygve Hoff.  Maleriet ble stilt ut ved Galleri Minneparken (Oslo) juni 2024. Dette er en original uten kopier eller prints, og selges for 10 000,- kr. Olje på linlerret, 80x80 cm på gullramme, 2024, til salgs.",
+            "description": "Morgengry er skapt med tanke om å få frem følelsen av når en ny dag gryr: den første solstrålen som treffer en ny dag som aldri har vært før. Inspirasjonen mitt til dette prosjektet var den unike følelsen av håpet som er i en ny dag, sammen med sangen “Snart gryr en dag” av Trygve Hoff.  Maleriet ble stilt ut ved Galleri Minneparken (Oslo) juni 2024.",
+            "descriptionInfo": "Dette er en original uten kopier eller prints, og selges for 10 000,- kr. Olje på linlerret, 80x80 cm på gullramme, 2024, til salgs.",
             "projectId": 3,
             "displayInGallery": false
         },
@@ -108,7 +119,8 @@
             "id": 14,
             "url": "/images/Nomophobia/Bilde_detaljer.jpeg",
             "title": "Nomophobia",
-            "description": "Nomophobia var hovedoppgaven min ved Nydalen Kunstskole, for avgangsutstillingen i billedkunstnerutdannelsen. Prosjektet tok flere måneder med ideutvikling, skisser og bokskriving om temaet jeg valgte ut: Hvordan ville en gammel maleteknikk (chiaroscero) sett ut i den moderne verden? Hva opptar oss i dag, og hvordan påvirker det oss? Fokuset mitt ble på mobilavhengighet - noe som jeg tenker å fortsette å skape en god samtale rundt. Dette er mitt største prosjekt til nå, med sin 1x1 m størrelse! Ved salg av maleri kommer også boken jeg lanserte i forbinnelse med maleriet med. Akryl og Olje på linlerret, 100x100 cm, 2025, til salgs. Dette er en original uten kopier eller prints, og selges for 15 000,- kr.",
+            "description": "Nomophobia var hovedoppgaven min ved Nydalen Kunstskole, for avgangsutstillingen i billedkunstnerutdannelsen. Prosjektet tok flere måneder med ideutvikling, skisser og bokskriving om temaet jeg valgte ut: Hvordan ville en gammel maleteknikk (chiaroscero) sett ut i den moderne verden? Hva opptar oss i dag, og hvordan påvirker det oss? Fokuset mitt ble på mobilavhengighet - noe som jeg tenker å fortsette å skape en god samtale rundt. Dette er mitt største prosjekt til nå, med sin 1x1 m størrelse! Ved salg av maleri kommer også boken jeg lanserte i forbinnelse med maleriet med.",
+            "descriptionInfo": "",
             "projectId": 4,
             "displayInGallery": true
         },
@@ -116,7 +128,8 @@
             "id": 15,
             "url": "/images/Nomophobia/Bilde_i_prosess.jpeg",
             "title": "Nomophobia (prosess)",
-            "description": "Nomophobia var hovedoppgaven min ved Nydalen Kunstskole, for avgangsutstillingen i billedkunstnerutdannelsen. Prosjektet tok flere måneder med ideutvikling, skisser og bokskriving om temaet jeg valgte ut: Hvordan ville en gammel maleteknikk (chiaroscero) sett ut i den moderne verden? Hva opptar oss i dag, og hvordan påvirker det oss? Fokuset mitt ble på mobilavhengighet - noe som jeg tenker å fortsette å skape en god samtale rundt. Dette er mitt største prosjekt til nå, med sin 1x1 m størrelse! Ved salg av maleri kommer også boken jeg lanserte i forbinnelse med maleriet med. Akryl og Olje på linlerret, 100x100 cm, 2025, til salgs. Dette er en original uten kopier eller prints, og selges for 15 000,- kr.",
+            "description": "Nomophobia var hovedoppgaven min ved Nydalen Kunstskole, for avgangsutstillingen i billedkunstnerutdannelsen. Prosjektet tok flere måneder med ideutvikling, skisser og bokskriving om temaet jeg valgte ut: Hvordan ville en gammel maleteknikk (chiaroscero) sett ut i den moderne verden? Hva opptar oss i dag, og hvordan påvirker det oss? Fokuset mitt ble på mobilavhengighet - noe som jeg tenker å fortsette å skape en god samtale rundt. Dette er mitt største prosjekt til nå, med sin 1x1 m størrelse! Ved salg av maleri kommer også boken jeg lanserte i forbinnelse med maleriet med.",
+            "descriptionInfo": "Akryl og Olje på linlerret, 100x100 cm, 2025, til salgs. Dette er en original uten kopier eller prints, og selges for 15 000,- kr.",
             "projectId": 4,
             "displayInGallery": false
         },
@@ -124,7 +137,8 @@
             "id": 16,
             "url": "/images/Nomophobia/Bokprosjekt.jpeg",
             "title": "Nomophobia (bokprosjekt)",
-            "description": "Nomophobia var hovedoppgaven min ved Nydalen Kunstskole, for avgangsutstillingen i billedkunstnerutdannelsen. Prosjektet tok flere måneder med ideutvikling, skisser og bokskriving om temaet jeg valgte ut: Hvordan ville en gammel maleteknikk (chiaroscero) sett ut i den moderne verden? Hva opptar oss i dag, og hvordan påvirker det oss? Fokuset mitt ble på mobilavhengighet - noe som jeg tenker å fortsette å skape en god samtale rundt. Dette er mitt største prosjekt til nå, med sin 1x1 m størrelse! Ved salg av maleri kommer også boken jeg lanserte i forbinnelse med maleriet med. Akryl og Olje på linlerret, 100x100 cm, 2025, til salgs. Dette er en original uten kopier eller prints, og selges for 15 000,- kr.",
+            "description": "Nomophobia var hovedoppgaven min ved Nydalen Kunstskole, for avgangsutstillingen i billedkunstnerutdannelsen. Prosjektet tok flere måneder med ideutvikling, skisser og bokskriving om temaet jeg valgte ut: Hvordan ville en gammel maleteknikk (chiaroscero) sett ut i den moderne verden? Hva opptar oss i dag, og hvordan påvirker det oss? Fokuset mitt ble på mobilavhengighet - noe som jeg tenker å fortsette å skape en god samtale rundt. Dette er mitt største prosjekt til nå, med sin 1x1 m størrelse! Ved salg av maleri kommer også boken jeg lanserte i forbinnelse med maleriet med.",
+            "descriptionInfo": "Akryl og Olje på linlerret, 100x100 cm, 2025, til salgs. Dette er en original uten kopier eller prints, og selges for 15 000,- kr.",
             "projectId": 4,
             "displayInGallery": false
         },
@@ -132,7 +146,8 @@
             "id": 17,
             "url": "/images/Gjennom_vinduet/Sommerlandskap.jpg",
             "title": "Sommerlandskap",
-            "description": "Prosjektet mitt 'gjennom vinduet' er en bildeserie som er hentet fra egne erfaringer om å ikke ha mulighet til å se verden utenfor når man er sengeliggende over lang tid, dette ble et prosjekt som for meg kunne gi andre mulighet til å se en vakker utsikt gjennom et vindu, uansett omstendigheter Sommerlandskap er lagd i 2022 hvor hver blomst i forgrunnen representerer en følelse av håp eller optimisme. Olje på canvas 50x60 cm. 2022, til salgs.",
+            "description": "Prosjektet mitt 'gjennom vinduet' er en bildeserie som er hentet fra egne erfaringer om å ikke ha mulighet til å se verden utenfor når man er sengeliggende over lang tid, dette ble et prosjekt som for meg kunne gi andre mulighet til å se en vakker utsikt gjennom et vindu, uansett omstendigheter Sommerlandskap er lagd i 2022 hvor hver blomst i forgrunnen representerer en følelse av håp eller optimisme.",
+            "descriptionInfo": "Olje på canvas 50x60 cm. 2022, til salgs.",
             "projectId": 5,
             "displayInGallery": true
         },
@@ -140,7 +155,8 @@
             "id": 18,
             "url": "/images/Gjennom_vinduet/sommerlandskap_detaljer1.jpeg",
             "title": "Sommerlandskap",
-            "description": "Prosjektet mitt 'gjennom vinduet' er en bildeserie som er hentet fra egne erfaringer om å ikke ha mulighet til å se verden utenfor når man er sengeliggende over lang tid, dette ble et prosjekt som for meg kunne gi andre mulighet til å se en vakker utsikt gjennom et vindu, uansett omstendigheter Sommerlandskap er lagd i 2022 hvor hver blomst i forgrunnen representerer en følelse av håp eller optimisme. Olje på canvas 50x60 cm. 2022, til salgs.",
+            "description": "Prosjektet mitt 'gjennom vinduet' er en bildeserie som er hentet fra egne erfaringer om å ikke ha mulighet til å se verden utenfor når man er sengeliggende over lang tid, dette ble et prosjekt som for meg kunne gi andre mulighet til å se en vakker utsikt gjennom et vindu, uansett omstendigheter Sommerlandskap er lagd i 2022 hvor hver blomst i forgrunnen representerer en følelse av håp eller optimisme.",
+            "descriptionInfo": "Olje på canvas 50x60 cm. 2022, til salgs.",
             "projectId": 5,
             "displayInGallery": true
         },
@@ -148,7 +164,8 @@
             "id": 19,
             "url": "/images/Gjennom_vinduet/Vinterlandskap_bilde.jpeg",
             "title": "Vinterlandskap",
-            "description": "Prosjektet mitt ‘’gjennom vinduet’’ er en bildeserie som er hentet fra egne erfaringer om å ikke ha mulighet til å se verden utenfor når man er sengeliggende over lang tid, dette ble et prosjekt som for meg kunne gi andre mulighet til å se en vakker utsikt gjennom et vindu, uansett omstendigheter. Vinterlandskap er lagd i 2022 hvor historiefortelling er i fokus, den symbolske hvite haren som hopper gjennom snøen på en iskald vinterdag. Olje på canvas 50x60 cm, 2022, solgt.",
+            "description": "Prosjektet mitt ‘’gjennom vinduet’’ er en bildeserie som er hentet fra egne erfaringer om å ikke ha mulighet til å se verden utenfor når man er sengeliggende over lang tid, dette ble et prosjekt som for meg kunne gi andre mulighet til å se en vakker utsikt gjennom et vindu, uansett omstendigheter. Vinterlandskap er lagd i 2022 hvor historiefortelling er i fokus, den symbolske hvite haren som hopper gjennom snøen på en iskald vinterdag.",
+            "descriptionInfo": "Olje på canvas 50x60 cm, 2022, solgt.",
             "projectId": 5,
             "displayInGallery": true
         },
@@ -156,7 +173,8 @@
             "id": 20,
             "url": "/images/Gjennom_vinduet/Vinterlandskap_detaljer1.jpeg",
             "title": "Vinterlandskap",
-            "description": "Prosjektet mitt ‘’gjennom vinduet’’ er en bildeserie som er hentet fra egne erfaringer om å ikke ha mulighet til å se verden utenfor når man er sengeliggende over lang tid, dette ble et prosjekt som for meg kunne gi andre mulighet til å se en vakker utsikt gjennom et vindu, uansett omstendigheter. Vinterlandskap er lagd i 2022 hvor historiefortelling er i fokus, den symbolske hvite haren som hopper gjennom snøen på en iskald vinterdag. Olje på canvas 50x60 cm, 2022, solgt.",
+            "description": "Prosjektet mitt ‘’gjennom vinduet’’ er en bildeserie som er hentet fra egne erfaringer om å ikke ha mulighet til å se verden utenfor når man er sengeliggende over lang tid, dette ble et prosjekt som for meg kunne gi andre mulighet til å se en vakker utsikt gjennom et vindu, uansett omstendigheter. Vinterlandskap er lagd i 2022 hvor historiefortelling er i fokus, den symbolske hvite haren som hopper gjennom snøen på en iskald vinterdag.",
+            "descriptionInfo": "Olje på canvas 50x60 cm, 2022, solgt.",
             "projectId": 5,
             "displayInGallery": true
         },
