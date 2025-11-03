@@ -22,7 +22,7 @@ export default function Socials() {
                         className="flex items-center gap-2 text-xl underline text-primary-light hover:text-white transition-all"
                     >
                         <Image
-                            src="/icons/golden_instagram.png"
+                            src="/icons/golden_Instagram.png"
                             alt="Instagram"
                             width={32}
                             height={32}
